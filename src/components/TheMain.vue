@@ -18,6 +18,5 @@ export default {
 main {
     color: $main_txt_color;
     padding: 100px;
-    background-color: $main_section_bg_color
 }
 </style>

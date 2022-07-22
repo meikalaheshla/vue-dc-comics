@@ -32,6 +32,11 @@ export default {
 <style lang="scss">
 @import "../assets/sass/var";
 
+header {
+    margin-top: 50px;
+    background-color: white;
+}
+
 .header-wrapper {
     height: 150px;
     display: flex;
@@ -40,22 +45,20 @@ export default {
 
 }
 
-nav {
-    height: 100%;
-}
-
 nav .header-links {
+
+
     display: flex;
+    align-items: center;
     gap: 30px;
     font-size: 1.2rem;
 }
 
-.header-links li {}
-
 .header-links a {
-    display: inline-block;
-    height: 120px;
-    line-height: 120px;
+    display: block;
+    height: 150px;
+    line-height: 150px;
+
 }
 
 .header-links a:hover,
