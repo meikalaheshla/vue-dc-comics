@@ -1,16 +1,14 @@
 <template>
     <div>
-        <TheHeader />
+        <header>ciccio</header>
 
 
     </div>
 </template>
 
 <script>
-
-
 export default {
-    name: 'BaseHeader',
+    name: "TheHeader",
 
 };
 </script>
