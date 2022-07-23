@@ -56,7 +56,22 @@
 
             </section>
             <section id="bottom-footer">
+                <div class="container bot-footer-wrapper">
+                    <div class="bot-footer-buttons">
 
+                        <button id="sign-up-button">SIGN-UP NOW</button>
+                    </div>
+                    <div class="social-links">
+                        <a id="follow-us-link" href="#">FOLOOW US</a>
+                        <a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter"></a>
+                        <a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube"></a>
+                        <a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest"></a>
+                        <a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope"></a>
+
+
+                    </div>
+                </div>
             </section>
         </footer>
     </div>
@@ -68,6 +83,7 @@ export default {
 </script>
 <style lang="scss">
 @import "../assets/sass/var";
+
 
 
 
@@ -100,7 +116,7 @@ export default {
 
 #top-footer .footer-links {
     display: flex;
-    padding: 20px 0;
+    padding: 40px 0;
     gap: 20px;
 
 }
@@ -119,6 +135,9 @@ export default {
     font-size: 0.8rem;
 }
 
+
+// TOP FOOTER RIGHT SIDE
+
 #top-footer figure {
     height: 100%;
 }
@@ -128,11 +147,45 @@ export default {
 
 }
 
+
+// BOTTOM FOOTER
+
 #bottom-footer {
     // to remove
     height: 100px;
 
     background-color: $bot_footer_bg_color;
     padding: 20px;
+}
+
+// BOTTOM FOOTER LAYOUT
+#bottom-footer .bot-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// BOTTOM FOOTER BUTTONS SECTION
+
+#bottom-footer #sign-up-button {
+    padding: 12px 15px;
+    background-color: inherit;
+    color: $main_txt_color;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border: 2px solid $dc_primary;
+}
+
+// BOTTOM FOOTER SOCIAL LINK SECTION
+#bottom-footer .social-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#bottom-footer #follow-us-link {
+    color: $dc_primary ;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 </style>
