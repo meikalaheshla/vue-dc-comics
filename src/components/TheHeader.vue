@@ -4,7 +4,7 @@
             <div class="container header-wrapper">
 
                 <figure>
-                    <img src="../assets/img/dc-logo.png" alt="">
+                    <img class="logo" src="../assets/img/dc-logo.png" alt="logo">
                 </figure>
                 <nav>
                     <ul class="header-links">
@@ -33,16 +33,20 @@ export default {
 @import "../assets/sass/var";
 
 header {
-    margin-top: 50px;
+    margin-top: 41px;
     background-color: white;
 }
 
 .header-wrapper {
-    height: 150px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+}
+
+.header-wrapper .logo {
+    height: 80px;
 }
 
 nav .header-links {
@@ -51,13 +55,13 @@ nav .header-links {
     display: flex;
     align-items: center;
     gap: 30px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .header-links a {
     display: block;
-    height: 150px;
-    line-height: 150px;
+    height: 120px;
+    line-height: 120px;
 
 }
 
