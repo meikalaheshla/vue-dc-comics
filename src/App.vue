@@ -3,6 +3,7 @@
 
     <TheHeader />
     <main>
+      <TheJumbotron />
       <ComicsSection />
     </main>
 
@@ -14,6 +15,7 @@
 import TheHeader from './components/TheHeader.vue';
 import TheFooter from './components/TheFooter.vue';
 import ComicsSection from './components/ComicsSection.vue';
+import TheJumbotron from './components/TheJumbotron.vue';
 
 
 export default {
@@ -22,6 +24,7 @@ export default {
     TheHeader,
     ComicsSection,
     TheFooter,
+    TheJumbotron
   }
 
 }
