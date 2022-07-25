@@ -81,7 +81,7 @@ export default {
     name: "TheFooter"
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/sass/var";
 
 

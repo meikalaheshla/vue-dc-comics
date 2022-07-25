@@ -2,23 +2,26 @@
   <div>
 
     <TheHeader />
-    <TheMain />
+    <main>
+      <ComicsSection />
+    </main>
+
     <TheFooter />
   </div>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader.vue';
-import TheMain from './components/TheMain.vue';
 import TheFooter from './components/TheFooter.vue';
+import ComicsSection from './components/ComicsSection.vue';
 
 
 export default {
   name: 'DcComics',
   components: {
     TheHeader,
-    TheMain,
-    TheFooter
+    ComicsSection,
+    TheFooter,
   }
 
 }
