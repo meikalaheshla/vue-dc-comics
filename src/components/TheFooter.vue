@@ -174,6 +174,7 @@ export default {
     font-weight: 400;
     font-size: 1.1rem;
     border: 2px solid $dc_primary;
+    cursor: pointer;
 }
 
 // BOTTOM FOOTER SOCIAL LINK SECTION

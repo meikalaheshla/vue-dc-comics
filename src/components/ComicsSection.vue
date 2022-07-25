@@ -2,7 +2,8 @@
 
 
   <section id="comics" class="container">
-    <button id="current-series-button" class="button-primary">CURRENT SERIES</button>
+    <button id="current-series-button" class="button-primary">CURRENT
+      SERIES</button>
     <div class="comics-wrapper">
       <div v-for=" (comic, i) in comics " :key="i" class="comic-col">
         <div class="comic-card">
@@ -116,7 +117,7 @@ export default {
 #comics {
 
   color: $main_txt_color;
-  padding: 40px;
+  padding: 40px 0;
   position: relative;
   text-align: center;
 
