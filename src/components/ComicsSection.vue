@@ -3,114 +3,16 @@
 
     <section id="comics" class="container" >
         <div class="comics-wrapper">
-            <div class="comic-col">
+            <div v-for=" (comic, i) in comics " :key="i" class="comic-col">
                 <div class="comic-card">
                     <figure>
 
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
+                        <img :src="comic.thumb" :alt="comic.series">
                     </figure>
-                    <span>Action Comics</span>
+                    <span>{{comic.type}}</span>
                 </div>
             </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
-            <div class="comic-col">
-                <div class="comic-card">
-                    <figure>
-
-                        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="comic">
-                    </figure>
-                    <span>Action Comics</span>
-                </div>
-            </div>
+           
             
            
         </div>
@@ -222,13 +124,16 @@
         flex-wrap: wrap;
         .comic-col{
             flex-basis: calc(100% / 6 );
-            padding: 10px;
+            padding:  10px;
             margin-bottom: 20px;
             .comic-card{
                 figure{
                     height: 190px;
                     overflow: hidden;
                         margin-bottom: 20px;
+                        img{
+                            display: block
+                        }
                     };
             }
 
