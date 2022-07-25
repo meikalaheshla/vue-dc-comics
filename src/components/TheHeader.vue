@@ -8,11 +8,10 @@
                 </figure>
                 <nav>
                     <ul class="header-links">
-                        <li><a href="">prova</a></li>
-                        <li><a href="">prova</a></li>
-                        <li><a href="">prova</a></li>
-                        <li><a href="">prova</a></li>
-                        <li><a class="active" href="">prova</a></li>
+                        <li v-for="link in links" :key="link.id">
+                            <a :class="{ 'active': link.current }" :href="link.url">
+                                {{ link.text }}</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -25,6 +24,74 @@
 <script>
 export default {
     name: "TheHeader",
+    data() {
+        return {
+            links: [
+                {
+                    text: 'Characters',
+                    url: '#',
+                    current: false,
+                    id: 1,
+                },
+                {
+                    text: 'Comics',
+                    url: '#',
+                    current: true,
+                    id: 2,
+                },
+                {
+                    text: 'Movies',
+                    url: '#',
+                    current: false,
+                    id: 3,
+                },
+                {
+                    text: 'TV',
+                    url: '#',
+                    current: false,
+                    id: 4,
+                },
+                {
+                    text: 'Games',
+                    url: '#',
+                    current: false,
+                    id: 5,
+                },
+                {
+                    text: 'Collectibles',
+                    url: '#',
+                    current: false,
+                    id: 6,
+                },
+                {
+                    text: 'Videos',
+                    url: '#',
+                    current: false,
+                    id: 7
+                },
+                {
+                    text: 'Fans',
+                    url: '#',
+                    current: false,
+                    id: 8,
+                },
+                {
+                    text: 'News',
+                    url: '#',
+                    current: false,
+                    id: 9,
+                },
+                {
+                    text: 'Shop',
+                    url: '#',
+                    current: false,
+                    id: 10,
+                },
+            ],
+
+
+        }
+    }
 
 };
 </script>
